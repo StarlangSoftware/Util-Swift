@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Subset{
+public class Subset{
     
     var set: [Int]
     private var rangeEnd: Int

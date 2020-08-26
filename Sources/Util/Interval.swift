@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Interval {
+public class Interval {
     
     private var list: [Tuple]
     

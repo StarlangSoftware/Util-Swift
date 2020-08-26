@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Permutation{
+public class Permutation{
 
     private var a: [Int]
     private var n: Int

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Swap{
+public class Swap{
     
     /**
     The swap method takes a list and two integer numbers i, j. And interchange the given array's

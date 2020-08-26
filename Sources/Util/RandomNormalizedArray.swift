@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RandomNormalizedArray{
+public class RandomNormalizedArray{
     
     private var array: [Double]
 

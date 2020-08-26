@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Tuple{
+public class Tuple{
     
     var first: Int
     var last: Int

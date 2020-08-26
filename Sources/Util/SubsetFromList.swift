@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SubsetFromList: Subset{
+public class SubsetFromList: Subset{
 
     private var elementList: [Int]
     private var indexList: [Int]
