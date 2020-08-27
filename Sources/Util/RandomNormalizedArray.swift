@@ -18,7 +18,7 @@ public class RandomNormalizedArray{
 
      - Parameters itemCount : input representing array size.
     */
-    init(itemCount: Int){
+    public init(itemCount: Int){
         var total = 0.0
         self.array = []
         for i in 0..<itemCount{

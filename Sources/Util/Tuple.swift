@@ -20,7 +20,7 @@ public class Tuple{
         - first: first integer input.
         - last: integer input.
     */
-    init(first : Int, last : Int){
+    public init(first : Int, last : Int){
         self.first = first
         self.last = last
     }

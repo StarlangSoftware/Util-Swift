@@ -23,7 +23,7 @@ public class SubsetFromList: Subset{
         - _list : list type input.
         - elementCount : input element count.
     */
-    init(_list: [Int], elementCount: Int){
+    public init(_list: [Int], elementCount: Int){
         self.elementList = _list
         self.indexList = []
         super.init(rangeStart: 0, rangeEnd: 0, elementCount: 0)

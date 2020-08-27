@@ -24,7 +24,7 @@ public class Subset{
         - rangeEnd : input defining ending range.
         - elementCount : input element count.
     */
-    init(rangeStart: Int, rangeEnd: Int, elementCount: Int){
+    public init(rangeStart: Int, rangeEnd: Int, elementCount: Int){
         self.rangeEnd = rangeEnd
         self.elementCount = elementCount
         self.set = []

@@ -12,7 +12,7 @@ public class Interval {
     private var list: [Tuple]
     
     /// A constructor of Interval class which creates a new list.
-    init(){
+    public init(){
         self.list = []
     }
 

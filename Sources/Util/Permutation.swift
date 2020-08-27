@@ -18,7 +18,7 @@ public class Permutation{
 
     - Parameter n: integer input.
     */
-    init(n: Int){
+    public init(n: Int){
         self.n = n
         self.a = []
         for i in 0..<n{
