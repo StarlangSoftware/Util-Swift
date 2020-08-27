@@ -31,7 +31,7 @@ public class Permutation{
 
      - Returns: a
     */
-    func get() -> [Int]{
+    public func get() -> [Int]{
         return self.a
     }
 
@@ -40,7 +40,7 @@ public class Permutation{
 
      - Returns: true if next permutation is possible, false otherwise.
     */
-    func next() -> Bool{
+    public func next() -> Bool{
         var i = self.n - 2
         while i >= 0 && self.a[i] >= self.a[i + 1]{
             i = i - 1

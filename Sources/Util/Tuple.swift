@@ -9,8 +9,8 @@ import Foundation
 
 public class Tuple{
     
-    var first: Int
-    var last: Int
+    private var first: Int
+    private var last: Int
     
     /**
     The constructor of {@link Tuple} class which takes two integer inputs and initializes first and last variables
@@ -30,7 +30,7 @@ public class Tuple{
 
      - Returns: The first item.
     */
-    func getFirst()-> Int{
+    public func getFirst()-> Int{
         return first
     }
     
@@ -39,7 +39,7 @@ public class Tuple{
 
      - Returns: the last item.
      */
-    func getLast()-> Int {
+    public func getLast()-> Int {
         return last
     }
 }

@@ -22,7 +22,7 @@ public class Interval {
             - start : first element of Tuple.
             - end : second element of Tuple.
     */
-    func add(start: Int, end: Int){
+    public func add(start: Int, end: Int){
         self.list.append(Tuple(first:start, last:end))
     }
 
@@ -32,7 +32,7 @@ public class Interval {
      
         - Returns: the first element at the list list's given index.
     */
-    func getFirst(index: Int) -> Int{
+    public func getFirst(index: Int) -> Int{
         return self.list[index].getFirst()
     }
 
@@ -42,7 +42,7 @@ public class Interval {
 
         - Returns: the last element at the list list's given index.
     */
-    func getLast(index: Int) -> Int{
+    public func getLast(index: Int) -> Int{
         return self.list[index].getLast()
     }
 
@@ -50,7 +50,7 @@ public class Interval {
     
         - Returns: size of the list list.
     */
-    func size() -> Int{
+    public func size() -> Int{
         return self.list.count
     }
 

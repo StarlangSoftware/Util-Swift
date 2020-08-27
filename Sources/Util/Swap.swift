@@ -18,7 +18,7 @@ public class Swap{
         - i : first index to swap.
         - j : second index to change.
     */
-    static func swap(a: inout [Int], i: Int, j: Int){
+    static public func swap(a: inout [Int], i: Int, j: Int){
         let t = a[i]
         a[i] = a[j]
         a[j] = t

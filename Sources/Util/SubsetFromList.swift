@@ -40,7 +40,7 @@ public class SubsetFromList: Subset{
 
     - Returns: true if next subset generation from list is possible, false otherwise.
     */
-    override func next() -> Bool{
+    override public func next() -> Bool{
         var i : Int = self.elementCount - 1
         while i > -1{
             self.indexList[i] = self.indexList[i] + 1

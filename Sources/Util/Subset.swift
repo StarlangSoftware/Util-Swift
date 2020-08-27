@@ -38,7 +38,7 @@ public class Subset{
 
     - Returns: the set list
     */
-    func get() -> [Int]{
+    public func get() -> [Int]{
         return self.set
     }
 
@@ -47,7 +47,7 @@ public class Subset{
 
     - Returns: true if next subset generation is possible, false otherwise.
     */
-    func next() -> Bool{
+    public func next() -> Bool{
         var i: Int = self.elementCount - 1
         while i > -1{
             self.set[i] = self.set[i] + 1

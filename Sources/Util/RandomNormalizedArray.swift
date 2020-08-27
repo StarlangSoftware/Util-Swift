@@ -16,7 +16,7 @@ public class RandomNormalizedArray{
     size itemCount and loops through each element of the list and initializes them with a random number by using
     random. Then, accumulates each element of the list and at the end divides each element with the resulting sum.
 
-     - Parameters itemCount : input funcining array size.
+     - Parameters itemCount : input representing array size.
     */
     init(itemCount: Int){
         var total = 0.0
@@ -35,7 +35,7 @@ public class RandomNormalizedArray{
 
     - Returns: the double list.
     */
-    func get() -> [Double]{
+    public func get() -> [Double]{
         return self.array
     }
 }
