@@ -9,13 +9,13 @@ import Foundation
 
 public class FileUtils{
     
-    public static func getLines(fileName: String) -> [String.SubSequence]?{
+    public static func getLines(fileName: String) -> [String]?{
         let thisSourceFile = URL(fileURLWithPath: #file)
         let thisDirectory = thisSourceFile.deletingLastPathComponent()
         let url = thisDirectory.appendingPathComponent(fileName)
         do{
             let fileContent = try String(contentsOf: url, encoding: .utf8)
-            return fileContent.split(whereSeparator: \.isNewline)
+            return fileContent.split(whereSeparator: \.isNewline).map(String.init)
         } catch {
             return nil
         }
