@@ -3,7 +3,7 @@ import XCTest
 
 final class RandomNormalizedArrayTest: XCTestCase {
     func testGet() {
-        let randomNormalizedArray : RandomNormalizedArray = RandomNormalizedArray(itemCount: 10)
+        let randomNormalizedArray : RandomNormalizedArray = RandomNormalizedArray(itemCount: 100)
         let array : [Double] = randomNormalizedArray.get()
         var sum : Double = 0.0
         for d in array{
