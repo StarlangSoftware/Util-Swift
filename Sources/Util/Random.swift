@@ -16,7 +16,14 @@ public class Random{
     }
     
     private func nextRandom(){
-        self.seed = (1664525 * self.seed + 1013904223) % Int.max;
+        var partialValue : Int = self.seed.multipliedReportingOverflow(by: 1664525).partialValue % Int.max
+        if partialValue < 0{
+            partialValue += Int.max
+        }
+        self.seed = partialValue.addingReportingOverflow(1013904223).partialValue % Int.max
+        if self.seed < 0{
+            self.seed += Int.max
+        }
     }
     
     public func nextDouble(min: Double = 0.0, max: Double = 1.0) -> Double{

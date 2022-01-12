@@ -21,8 +21,9 @@ public class RandomNormalizedArray{
     public init(itemCount: Int){
         var total = 0.0
         self.array = []
+        let random = Random()
         for i in 0..<itemCount{
-            self.array.append(Double.random(in: 0 ..< 1))
+            self.array.append(random.nextDouble(min: 0, max: 1))
             total += self.array[i]
         }
         for i in 0..<itemCount{
