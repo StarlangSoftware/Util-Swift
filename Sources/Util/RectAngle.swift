@@ -14,7 +14,7 @@ public class RectAngle{
     private var width: Int
     private var height: Int
     
-    init(x: Int, y: Int, width: Int, height: Int){
+    public init(x: Int, y: Int, width: Int, height: Int){
         self.x = x
         self.y = y
         self.width = width
