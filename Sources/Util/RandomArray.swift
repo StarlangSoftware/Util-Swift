@@ -7,9 +7,7 @@
 
 import Foundation
 
-public class RandomNormalizedArray{
-    
-    private var array: [Double]
+public class RandomArray{
 
     /**
     The constructor of RandomNormalizedArray class gets an integer itemCount as an input. Creates a list of
@@ -18,25 +16,26 @@ public class RandomNormalizedArray{
 
      - Parameters itemCount : input representing array size.
     */
-    public init(itemCount: Int){
+    public static func normalizedArray(itemCount: Int) -> [Double]{
         var total = 0.0
-        self.array = []
+        var array : [Double] = []
         let random = Random()
         for i in 0..<itemCount{
-            self.array.append(random.nextDouble(min: 0, max: 1))
-            total += self.array[i]
+            array.append(random.nextDouble(min: 0, max: 1))
+            total += array[i]
         }
         for i in 0..<itemCount{
-            self.array[i] /= total
+            array[i] /= total
         }
+        return array
     }
 
-    /**
-    Getter for the double list.
-
-    - Returns: the double list.
-    */
-    public func get() -> [Double]{
-        return self.array
+    public static func indexArray(itemCount: Int) -> [Int]{
+        var array : [Int] = []
+        for i in 0..<itemCount{
+            array.append(i)
+        }
+        array.shuffle()
+        return array
     }
 }
