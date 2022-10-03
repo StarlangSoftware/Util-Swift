@@ -4,7 +4,7 @@ import XCTest
 final class RandomArrayTest: XCTestCase {
    
     func testNormalizedArray() {
-        let array : [Double] = RandomArray.normalizedArray(itemCount: 10)
+        let array : [Double] = RandomArray.normalizedArray(itemCount: 100)
         var sum : Double = 0.0
         for d in array{
             sum += d

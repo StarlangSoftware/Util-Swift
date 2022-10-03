@@ -9,10 +9,10 @@ import Foundation
 
 public class FileUtils{
     
-    public static func getLines(fileName: String) -> [String]?{
+    public static func getLines(fileName: String, fileExtension: String) -> [String]?{
         let thisSourceFile = URL(fileURLWithPath: #file)
         let thisDirectory = thisSourceFile.deletingLastPathComponent()
-        let url = thisDirectory.appendingPathComponent(fileName)
+        let url = thisDirectory.appendingPathComponent(fileName + "." + fileExtension)
         do{
             let fileContent = try String(contentsOf: url, encoding: .utf8)
             return fileContent.split(whereSeparator: \.isNewline).map(String.init)
@@ -21,11 +21,11 @@ public class FileUtils{
         }
     }
 
-    public static func getItems(fileName: String) -> [[String]]?{
+    public static func getItems(fileName: String, fileExtension: String) -> [[String]]?{
         var items : [[String]] = []
         let thisSourceFile = URL(fileURLWithPath: #file)
         let thisDirectory = thisSourceFile.deletingLastPathComponent()
-        let url = thisDirectory.appendingPathComponent(fileName)
+        let url = thisDirectory.appendingPathComponent(fileName + "." + fileExtension)
         do{
             let fileContent = try String(contentsOf: url, encoding: .utf8)
             let lines : [String] = fileContent.split(whereSeparator: \.isNewline).map(String.init)
